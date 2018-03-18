@@ -13,15 +13,19 @@ import android.widget.TextView;
 
 public class TouchListener implements View.OnTouchListener {
     private ScaleGestureDetector geste;
+    private GestureDetector gd;
     private Rectangle re;
     public TouchListener(Rectangle r, Context c) {
         this.re = r;
         Pinchette sgd = new Pinchette(re);
+        DoubleDoigt ddoi = new DoubleDoigt(re);
         this.geste = new ScaleGestureDetector(c,sgd);
+        this.gd = new GestureDetector(c,ddoi);
     }
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
         this.geste.onTouchEvent(motionEvent);
+        this.gd.onTouchEvent(motionEvent);
         return true;
     }
 }
