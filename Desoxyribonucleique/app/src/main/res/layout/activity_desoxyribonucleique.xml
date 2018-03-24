@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_span=""
+    tools:context="com.example.imbert.desoxyribonucleique.Desoxyribonucleique">
+
+<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
+    <Button
+        android:id="@+id/atoma"
+        android:text="@string/a"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+    <Button
+        android:id="@+id/atomt"
+        android:text="@string/t"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        />
+
+</TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <Button
+            android:id="@+id/atomc"
+            android:text="@string/c"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+        <Button
+            android:id="@+id/atomg"
+            android:text="@string/g"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+    </TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/textresult"
+            />
+
+    </TableRow>
+
+</TableLayout>

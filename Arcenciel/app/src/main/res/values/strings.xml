@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Arcenciel</string>
+    <string name="selection">Sélection</string>
+    <string name="rouge">Rouge</string>
+    <string name="orange">Orange</string>
+    <string name="jaune">Jaune</string>
+    <string name="vert">Vert</string>
+    <string name="bleu">Bleu</string>
+    <string name="indigo">Indigo</string>
+    <string name="violet">Violet</string>
+</resources>
