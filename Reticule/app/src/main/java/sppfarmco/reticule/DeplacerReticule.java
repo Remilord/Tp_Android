@@ -1,5 +1,6 @@
 package sppfarmco.reticule;
 
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -14,7 +15,12 @@ public class DeplacerReticule implements View.OnTouchListener {
     }
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
-       this.viewreticule.setPosition(motionEvent.getRawX(),motionEvent.getY());
+        if(motionEvent.getActionMasked() == MotionEvent.ACTION_DOWN) {
+            this.viewreticule.setPosition((int) motionEvent.getX(), (int) motionEvent.getY());
+        }else if(motionEvent.getActionMasked() == MotionEvent.ACTION_MOVE) {
+            this.viewreticule.setPosition((int) motionEvent.getX(), (int) motionEvent.getY());
+            this.viewreticule.movePosition();
+        }
         this.viewreticule.invalidate();
         return true;
     }

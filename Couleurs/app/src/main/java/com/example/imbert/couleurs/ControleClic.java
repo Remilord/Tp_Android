@@ -1,8 +1,13 @@
 package com.example.imbert.couleurs;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -16,6 +21,9 @@ public class ControleClic implements AdapterView.OnItemClickListener {
     }
     @Override
     public void onItemClick(AdapterView<?> liste, View vue, int positionListe, long idBase) {
-        Toast.makeText(this.parent, "Clic sur ligne "+(positionListe+1), Toast.LENGTH_SHORT).show();
+        Intent newact = new Intent(this.parent.getApplicationContext(),Delete.class);
+        String text =((TextView) vue.findViewById(R.id.nom)).getText().toString();
+        newact.putExtra("fordelete",text);
+        this.parent.startActivityForResult(newact,1);
     }
 }

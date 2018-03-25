@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="couleurs_hex">
+        <item>#2E8B57</item>
+        <item>#FFFFCC</item>
+        <item>#FF6666</item>
+    </string-array>
+    <string-array name="couleurs">
+       <item>Vert</item>
+        <item>Jaune</item>
+        <item>Rouge</item>
+    </string-array>
+</resources>

@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_span=""
+    android:id="@+id/main_layout"
+    android:background="@color/vertdegeulasse"
     tools:context="com.example.imbert.desoxyribonucleique.Desoxyribonucleique">
 
 <TableRow
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    >
-
+    android:gravity="center_horizontal"
+        >
     <Button
         android:id="@+id/atoma"
         android:text="@string/a"
@@ -29,6 +30,7 @@
     <TableRow
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:gravity="center_horizontal"
         >
         <Button
             android:id="@+id/atomc"
@@ -46,9 +48,11 @@
     </TableRow>
     <TableRow
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:layout_width="match_parent">
-        <EditText
+        <TextView
             android:layout_height="wrap_content"
+            android:background="@color/blancos"
             android:layout_width="match_parent"
             android:id="@+id/textresult"
             />

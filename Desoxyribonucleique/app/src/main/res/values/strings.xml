@@ -4,4 +4,14 @@
     <string name="t">T</string>
     <string name="c">C</string>
     <string name="g">G</string>
+
+    <string name="couleur_verte">Couleur Verte</string>
+    <string name="couleur_rouge">Couleur Rouge</string>
+    <string name="couleur_jaune">Couleur Jaune</string>
+    <string name="pref_couleur">Choix de la couleur de l\'écran</string>
+    <string name="desactiver_buttons">Désactiver les boutons</string>
+    <string name="disabla_string">Désactiver le bouton A</string>
+    <string name="disablt_string">Désactiver le bouton T</string>
+    <string name="disablc_string">Désactiver le bouton C</string>
+    <string name="disabg_string">Désactiver le bouton G</string>
 </resources>

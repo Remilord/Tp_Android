@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory
+    android:title="@string/pref_couleur"
+    android:key="pref_couleur">
+
+    <ListPreference
+        android:defaultValue="Vert"
+        android:entries="@array/couleurs"
+        android:entryValues="@array/couleurs_hex"
+        android:key="couleurschoice"
+        android:summary="Choissisez la couleur de fond"
+        android:title="Choix des couleurs" />
+</PreferenceCategory>
+    <PreferenceCategory
+        android:key="disable"
+        android:title="@string/desactiver_buttons">
+        <CheckBoxPreference
+            android:key="disabla"
+            android:title="@string/disabla_string"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+            android:key="disablt"
+            android:title="@string/disablt_string"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+            android:key="disablc"
+            android:title="@string/disablc_string"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+            android:key="disablg"
+            android:title="@string/disabg_string"
+            android:defaultValue="false"
+            />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Start Application " />
+    <PreferenceScreen
+        android:key="startmain"
+        android:title="-->">
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -13,8 +13,10 @@ import android.view.View;
 
 public class ViewReticule extends View {
     private Paint orange;
-    private float positionx;
-    private float positiony;
+    private int positionactuellex;
+    private int positionactuelley;
+    private int newpositionx;
+    private int newpositiony;
     private float radius;
     public ViewReticule(Context c, AttributeSet as) {
         super(c,as);
@@ -22,25 +24,40 @@ public class ViewReticule extends View {
         orange.setStyle(Paint.Style.STROKE);
         orange.setStrokeWidth(5.0f);
         orange.setColor(0xffff9900);
-        this.positionx = 50;
-        this.positiony = 50;
+        this.positionactuellex = 50;
+        this.positionactuelley = 50;
         this.radius = 50;
     }
-    public float getPositionx() {
-        return this.positionx;
+    public int getPositionx() {
+        return this.positionactuellex;
     }
-    public float getPositiony() {
-        return this.positiony;
+    public int getPositiony() {
+        return this.positionactuelley;
     }
-    public void setPosition(float x,float y) {
-        this.positionx = x;
-        this.positiony = y;
+    public void setPosition(int x,int y) {
+        this.newpositionx = x;
+        this.newpositiony = y;
     }
-
+    public void movePosition() {
+            if(this.newpositionx != this.positionactuellex) {
+                if(this.newpositionx > this.positionactuellex) {
+                    this.positionactuellex=this.positionactuellex+10;
+                }else {
+                    this.positionactuellex=this.positionactuellex-10;
+                }
+            }
+        if(this.newpositiony != this.positionactuelley) {
+            if(this.newpositiony > this.positionactuelley) {
+                this.positionactuelley=this.positionactuelley+10;
+            }else {
+                this.positionactuelley=this.positionactuelley-10;
+            }
+        }
+    }
     @Override
     public void onDraw(Canvas canvas) {
-        canvas.drawCircle(positionx,positiony,radius,orange);
-        canvas.drawLine(positionx-radius-10,positiony,positionx+radius+10,positiony,orange);
-        canvas.drawLine(positionx,positiony-radius-10,positionx,positiony+radius+10,orange);
+        canvas.drawCircle(positionactuellex,positionactuelley,radius,orange);
+        canvas.drawLine(positionactuellex-radius-10,positionactuelley,positionactuellex+radius+10,positionactuelley,orange);
+        canvas.drawLine(positionactuellex,positionactuelley-radius-10,positionactuellex,positionactuelley+radius+10,orange);
     }
 }

@@ -16,13 +16,13 @@ public class Reticule extends AppCompatActivity {
     @Override
     public void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        vr.setPosition(savedInstanceState.getFloat("posx"),savedInstanceState.getFloat("posy"));
+        vr.setPosition(savedInstanceState.getInt("posx"),savedInstanceState.getInt("posy"));
     }
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         super.onSaveInstanceState(savedInstanceState);
-        savedInstanceState.putFloat("posx",vr.getPositionx());
-        savedInstanceState.putFloat("posy",vr.getPositiony());
+        savedInstanceState.putInt("posx",vr.getPositionx());
+        savedInstanceState.putInt("posy",vr.getPositiony());
     }
 
 }

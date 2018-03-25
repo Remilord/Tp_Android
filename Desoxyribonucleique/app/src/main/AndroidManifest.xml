@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Desoxyribonucleique">
+
+        </activity>
+        <activity android:name=".InterfacePreference">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
