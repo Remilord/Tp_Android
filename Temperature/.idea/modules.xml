@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Temperature.iml" filepath="$PROJECT_DIR$/Temperature.iml" />
+      <module fileurl="file://C:\Users\remii\Desktop\Tp_Android\Temperature\Temperature.iml" filepath="C:\Users\remii\Desktop\Tp_Android\Temperature\Temperature.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\remii\Desktop\Tp_Android\Temperature\app\app.iml" filepath="C:\Users\remii\Desktop\Tp_Android\Temperature\app\app.iml" />
     </modules>
   </component>
 </project>
