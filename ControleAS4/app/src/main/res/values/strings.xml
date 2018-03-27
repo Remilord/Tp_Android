@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ControleAS4</string>
+    <string name="gauche">&#9668;&#9668;</string>
+    <string name="droite">&#9658;&#9658;</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Une Catégorie -->
+    <!-- Une boîte de dialogue -->
+    <PreferenceCategory android:title="Rond au dessus du trait ?">
+        android:key="startmain">
+        <CheckBoxPreference
+            android:key="checkbox"
+            android:title="Oui"
+            android:defaultValue="false"
+            android:summary="Coche ou décoche"
+            />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
