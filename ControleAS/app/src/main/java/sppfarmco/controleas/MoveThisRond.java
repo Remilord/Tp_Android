@@ -13,9 +13,11 @@ public class MoveThisRond implements View.OnClickListener {
     }
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.button_left) {
+        if(view.getId() == R.id.button_right) {
             this.decoration.moveRond();
-            this.decoration.invalidate();
+        }else if(view.getId() == R.id.button_left) {
+            this.decoration.moveRondLeft();
         }
+        this.decoration.invalidate();
     }
 }
